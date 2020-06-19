@@ -7,10 +7,14 @@ $(document).ready(function () {
     mMenuBtn.on("click", function(){
         mMenu.toggleClass("active");
         $("body").toggleClass("no-scroll");
+        // scroll-fix for IPhone
         $(document).on("touchmove",function(event){
             event.preventDefault();
           });
+        //swiper-fix for mobile menu
         $(".swiper-container").toggleClass("hidden");
+        //search-button hidden
+        $(".search-button").toggleClass("hidden");
     });
 
     // Burger Animation
