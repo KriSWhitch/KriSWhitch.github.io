@@ -16,11 +16,14 @@ body {
     overflow: hidden;
 }
 
-header {
+.header {
     display: flex;
     align-items: center;
     border-bottom: 1px solid #D4D4D4;
     height: 104px;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
 }
 
 .m-menu {
@@ -28,6 +31,7 @@ header {
     display: flex;
     align-items: center;
     flex-grow: 1;
+    z-index: 100;
 }
 
 .logo {
@@ -132,7 +136,7 @@ header {
 }
 
 .film {
-    padding-top: 80px;
+    padding-top: 170px;
     padding-bottom: 80px;
     border-bottom: 1px solid #D4D4D4;
 }
@@ -514,7 +518,7 @@ header {
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        height: calc(100%-68px);
+        height: calc(100% - 68px);
 
         background: #5671F6;
     }
@@ -593,7 +597,7 @@ header {
     }
 
     .film {
-        padding-top: 50px;
+        padding-top: 130px;
         padding-bottom: 60px;
     }
 
