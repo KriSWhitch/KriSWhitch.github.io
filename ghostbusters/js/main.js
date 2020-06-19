@@ -7,12 +7,18 @@ $(document).ready(function () {
     mMenuBtn.on("click", function(){
         mMenu.toggleClass("active");
         $("body").toggleClass("no-scroll");
+        $(document).on("touchmove",function(event){
+            event.preventDefault();
+          });
+        $(".swiper-container").toggleClass("hidden");
     });
 
     // Burger Animation
     $(".m-menu-button").click(function () {
         $(this).toggleClass("active");
     });
+
+    
 
     const tab = $(".tab");
 
