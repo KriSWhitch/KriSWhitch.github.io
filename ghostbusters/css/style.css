@@ -703,3 +703,9 @@ body {
         flex-basis: 100%;
     }
 }
+
+@media screen and ( max-height: 400px ){
+	.m-menu {
+		flex-direction: row;
+	}
+}
