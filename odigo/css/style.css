@@ -382,3 +382,122 @@ body {
 .prefecture-neighborhood .prefecture-subtitle {
     margin-bottom: 90px;
 }
+
+.places-title {
+    position:relative;
+    display:inline-block;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    color: #102746;
+    padding-bottom: 7px;
+    margin-bottom: 64px;
+}
+
+.places-title:after{
+    content:"";
+    position: absolute;
+    width:70%;
+    height:3px;
+    background:#006DFE;
+    top: 100%;
+    right: 30%;
+}
+
+.places-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.places-card {
+    margin-bottom: 58px;
+}
+
+.places-card-img {
+    width: 386px;
+    height: 377px;
+    margin-bottom: 45px;
+    object-fit: cover;
+}
+
+.places-card-subtitle {
+    max-width: 391px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #102746;
+    margin-bottom: 31px;
+}
+
+.places-card-btn {
+    border: none;
+    background-color: #006DFE;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 12px 19px;
+    text-transform: uppercase;
+}
+
+.odigo-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(180deg, rgba(21, 24, 36, 0.4) 100%, #151824 100%), url(../img/odigo-video.png);
+    height: 858px;
+    background-size: cover;
+}
+
+.video-btn {
+    
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.footer {
+    background: #0E1D28;
+    display: flex;
+    height: 370px;
+}
+
+.footer-logo {
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo img {
+    width: 170px;
+    height: 64px;
+}
+
+.footer-links {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-link-block h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.footer-link-block ul li {
+    list-style: none;
+    margin-bottom: 4px;
+}
+
+.footer-link-block ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
