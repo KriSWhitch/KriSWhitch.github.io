@@ -859,3 +859,13 @@ body {
         flex-basis: 100%;
     }
 }
+
+@media ( max-width:580px ) {
+    .benefits-card {
+        flex-direction: column;
+    }
+
+    .benefits-card-image {
+        margin-right: 0;
+    }
+}
