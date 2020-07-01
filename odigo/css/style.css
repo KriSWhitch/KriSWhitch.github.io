@@ -868,4 +868,33 @@ body {
     .benefits-card-image {
         margin-right: 0;
     }
+
+}
+
+@media ( max-width:580px ) {
+
+    .wrapper h2 {
+        font-size: 26px;
+    }
+
+    .inspiration-header {
+        flex-direction: column;
+    }
+
+    .inspiration-title {
+        margin-bottom: 30px;
+    }
+
+    .inspiration-link {
+        margin-right: auto;
+    }
+
+    .footer-link-block h3 {
+        font-size: 16px;
+    }
+
+    .footer-link-block ul li a {
+        font-size: 12px;
+    }
+
 }
