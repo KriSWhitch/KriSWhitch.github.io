@@ -914,6 +914,7 @@ body {
     }
 
     .navigation-link {
+        display: block;
         flex-basis: auto;
         margin-bottom: 10px;
     }
@@ -942,5 +943,8 @@ body {
     .support-search-mobile .support-btn {
         width: 260px;
         padding: 18px 20px;
+    }
+    .support-search-mobile {
+        margin-bottom: 20%;
     }
 }
