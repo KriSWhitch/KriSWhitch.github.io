@@ -860,21 +860,20 @@ body {
     }
 }
 
+
 @media ( max-width:580px ) {
+
+    .wrapper h2 {
+        font-size: 26px;
+    }
+
+
     .benefits-card {
         flex-direction: column;
     }
 
     .benefits-card-image {
         margin-right: 0;
-    }
-
-}
-
-@media ( max-width:580px ) {
-
-    .wrapper h2 {
-        font-size: 26px;
     }
 
     .inspiration-header {
@@ -897,4 +896,51 @@ body {
         font-size: 12px;
     }
 
+}
+
+@media ( max-width:380px ) {
+    .site-logo {
+        margin-left: 30px;
+        margin-right: auto;
+    }
+
+    .mobile-button {
+        margin-left: auto;
+        margin-right: 30px;
+    }
+
+    .navigation {
+        flex-direction: column;
+    }
+
+    .navigation-link {
+        flex-basis: auto;
+        margin-bottom: 10px;
+    }
+
+    .navigation-link a {
+        font-size: 14px;
+    }
+
+    .support-search-mobile .support-search-input {
+        font-size: 14px;
+        padding-left: 30px;
+        width: 260px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .support-search-mobile .support-search-input:nth-child(1) {
+        margin-bottom: 10px;
+    }
+
+    .support-search-mobile .support-search-input:nth-child(2) {
+        margin-bottom: 12px;
+    }
+
+    .support-search-mobile .support-btn {
+        width: 260px;
+        padding: 18px 20px;
+    }
 }
