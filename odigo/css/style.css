@@ -923,6 +923,10 @@ body {
         font-size: 14px;
     }
 
+    .navigation-link:last-child {
+        margin-bottom: 0;
+    }
+
     .support-search-mobile .support-search-input {
         font-size: 14px;
         padding-left: 30px;
