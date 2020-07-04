@@ -911,6 +911,7 @@ body {
 
     .navigation {
         flex-direction: column;
+        margin-top: 10%;
     }
 
     .navigation-link {
@@ -948,8 +949,9 @@ body {
         width: 260px;
         padding: 18px 20px;
     }
+
     .support-search-mobile {
-        margin-bottom: 20%;
+        margin-bottom: 10%;
     }
 
     .gallery-img-container:nth-child(1) h3 {
