@@ -288,6 +288,7 @@ body {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
+    text-decoration: none;
 }
 
 
