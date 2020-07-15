@@ -715,7 +715,14 @@ body {
 
     .support-search-mobile {
         margin-bottom: 10%;
+        display: none;
     }
+
+    /*Fixes to support-search-mobile display:none */
+    .support-search-input, .support-btn {
+        display: none;
+    }
+
 
     .support-search-input {
         margin-bottom: 40px;
@@ -899,6 +906,12 @@ body {
 
 }
 
+@media ( max-width: 420px ) {
+    .support-search-input, .support-btn {
+        display: block;
+    }
+}
+
 @media ( max-width:380px ) {
     .site-logo {
         margin-left: 30px;
@@ -953,7 +966,10 @@ body {
 
     .support-search-mobile {
         margin-bottom: 10%;
+        display: flex;
     }
+
+
 
     .gallery-img-container:nth-child(1) h3 {
         top: 100px;
