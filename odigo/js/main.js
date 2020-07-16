@@ -20,7 +20,7 @@ $(document).ready(function () {
 });
 
 
-/* Прокручивает страницу вверх при нажатии на кнопку */
+/* To the top */
 $(window).scroll(function() {
     var height = $(window).scrollTop();
     if (height > 100 && height < 5800) {
