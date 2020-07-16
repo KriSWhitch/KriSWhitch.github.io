@@ -715,14 +715,7 @@ body {
 
     .support-search-mobile {
         margin-bottom: 10%;
-        display: none;
     }
-
-    /*Fixes to support-search-mobile display:none */
-    .support-search-input, .support-btn {
-        display: none;
-    }
-
 
     .support-search-input {
         margin-bottom: 40px;
@@ -906,11 +899,6 @@ body {
 
 }
 
-@media ( max-width: 420px ) {
-    .support-search-input, .support-btn {
-        display: block;
-    }
-}
 
 @media ( max-width:380px ) {
     .site-logo {
@@ -978,4 +966,42 @@ body {
     .gallery-img-container:nth-child(2) h3 {
         top: 160px;
     }
+}
+
+
+@media screen and (max-height: 400px){
+    .m-menu {
+        flex-direction: row;
+    }
+
+    .navigation {
+        margin-top: 0;
+        margin-left: 20px;
+    }
+
+    .navigation-link {
+        margin-bottom: 20px;
+        flex-basis: 100%;
+    }
+
+    .support-search-mobile {
+        margin: 0;
+    }
+
+    .support-search-input {
+        padding-left: 23px;
+        padding-bottom: 12px;
+        padding-top: 12px;
+    }
+
+    .support-btn {
+        padding: 11.5px 23.5px;
+    }
+
+    .m-menu-button.active {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
 }
