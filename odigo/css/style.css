@@ -662,6 +662,8 @@ body {
         display: flex;
     }
 
+    
+
     .m-menu-button.active .menu-line:nth-child(1){
         transform: rotate(45deg) translate(2.5px, 4.5px);
         -webkit-transform: rotate(45deg) translate(2.5px, 4.5px);
@@ -675,6 +677,12 @@ body {
         transform: rotate(-45deg) translate(2.5px, -4.5px);
         -webkit-transform: rotate(-45deg) translate(2.5px, -4.5px);
      }
+
+     .m-menu-button.active {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
 
     .wrapper {
         max-width: 100%;
@@ -998,10 +1006,6 @@ body {
         padding: 11.5px 23.5px;
     }
 
-    .m-menu-button.active {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }
+
 
 }
