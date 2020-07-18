@@ -24,17 +24,12 @@ $(document).ready(function () {
 
     
 
-    const tab = $(".tab");
+//swiper
 
-    tab.on("click", function(){
-        tab.removeClass("active");
-        $(this).toggleClass("active");
-        let activeTabContent = $(this).attr("data-target");
-        $(".tabs-content").removeClass("visible");
-        $(activeTabContent).toggleClass("visible");
-    });
+    const mainSwiper = document.querySelector('.swiper-container');
+    const workingProcessSwiper = document.querySelector('.working-swiper-container');
 
-    let mySwiper = new Swiper ('.swiper-container', {
+    let Swiper1 = new Swiper (mainSwiper, {
         slidesPerView: 1,
         loop: true,
         spaceBetween: 25,
@@ -42,10 +37,25 @@ $(document).ready(function () {
             320: {
                 navigation: {
                     nextEl: ".button-next",
+                    prevEl: ".button-previous",
                 },
             },
         }
-      })
+      });
+
+      let Swiper2 = new Swiper (workingProcessSwiper, {
+        slidesPerView: 1,
+        loop: true,
+        spaceBetween: 25,
+        breakpoints:{
+            320: {
+                navigation: {
+                    nextEl: ".working-button-next",
+                    prevEl: ".working-button-previous",
+                },
+            },
+        }
+      });
 
 });
 
@@ -59,6 +69,7 @@ $(window).scroll(function() {
         $('#back2Top').fadeOut();
     }
 });
+
 $(document).ready(function() {
     $("#back2Top").click(function(event) {
         event.preventDefault();
