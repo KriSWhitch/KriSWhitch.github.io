@@ -405,7 +405,7 @@ body {
 .progressbar-container{
     width: 100%;
     z-index: 1;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
   }
 
 .progressbar{
@@ -482,7 +482,7 @@ body {
     background: transparent;
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    padding-top: 14%;
     z-index: 99;
 }
 
