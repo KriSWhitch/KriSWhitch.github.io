@@ -5,3 +5,4 @@
 - awito: https://kriswhitch.github.io/awito/
 - FDesign: https://kriswhitch.github.io/fdesign/
 - 26andfour: https://kriswhitch.github.io/26andfour/
+- geobin: https://kriswhitch.github.io/geobin/
