@@ -14,6 +14,34 @@ body {
     color: #363636;
 }
 
+#back2Top {
+    width: 60px;
+    height: 60px;
+    padding-top: 12px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 5;
+    display: none;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 30px;
+    left: 20px;
+    background-color: #FA6742;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+#back2Top:hover {
+    background-color: #ff7957;
+    color: #fff;
+}
+
 .header {
     height: 96px;
 }
@@ -139,6 +167,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 100px 0;
 }
 
 .about-image {
@@ -202,6 +231,76 @@ body {
     z-index: 99;
 }
 
+.advantages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.advantages-title {
+    color: #363636;
+    font-size: 44px;
+    margin-bottom: 25px;
+}
+
+.advantages-title span {
+    color: #FA6742;
+}
+
+.advantages-animate-border {
+    position: relative;
+    display: block;
+    width: 115px;
+    height: 3px;
+    background: #FA6742;
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+
+.advantages-animate-border::after {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 3px;
+    left: 15px;
+    bottom: 0;
+    border-left: 10px solid #fff;
+    border-right: 10px solid #fff;
+    animation: animborder 2s linear infinite;
+}
+
+.advantages-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.advantages-card {
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.advantages-card-image {
+    margin-bottom: 30px;
+}
+
+.advantages-card-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.advantages-card-subtitle {
+    max-width: 250px;
+    font-weight: 400;
+    color: #757575;
+}
 
 
 @keyframes animborder {
