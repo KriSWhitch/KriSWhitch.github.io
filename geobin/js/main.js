@@ -33,37 +33,85 @@ $(document).ready(function () {
         slidesPerView: 1,
         loop: true,
         spaceBetween: 25,
-        breakpoints:{
-            320: {
-                navigation: {
-                    nextEl: ".button-next",
-                    prevEl: ".button-previous",
-                },
-            },
-        }
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: true,
+          },
+        navigation: {
+            nextEl: ".button-next",
+            prevEl: ".button-previous",
+        },
       });
 
+
+      let className = 'progressbar-item';
       let Swiper2 = new Swiper (workingProcessSwiper, {
         slidesPerView: 1,
         loop: true,
         spaceBetween: 25,
-        breakpoints:{
-            320: {
-                navigation: {
-                    nextEl: ".working-button-next",
-                    prevEl: ".working-button-previous",
-                },
-            },
+        navigation: {
+            nextEl: ".working-button-next",
+            prevEl: ".working-button-previous",
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<li class="' + className + ` step-${index+1}` + '">' + ("Step " + (index + 1)) + '</li>';
+              },
         }
       });
 
+
+      
+    const progressbarContainer = document.querySelector('.progressbar-container');
+    const swiperPaginationBullets = document.querySelectorAll('.swiper-pagination-bullet');
+
+    const clearProgressBar = () => {
+        swiperPaginationBullets.forEach(element => {
+            element.className = element.className.replace(/\bactive\b/g, "");
+        })
+    }
+
+    const makeActive = (elementNumber) => {
+        clearProgressBar();
+        for (let i = 0; i < elementNumber; i++) {
+            swiperPaginationBullets[i].classList.add('active');
+        }
+    }
+    
+
+
+    var observer = new MutationObserver(function (mutations) {
+        mutations.forEach(function (mutation) {
+            var newVal = $(mutation.target).prop(mutation.attributeName);
+            if (mutation.attributeName === "class") {
+                if (mutation.target.ariaLabel == "Go to slide 1" && mutation.target.classList.contains("swiper-pagination-bullet-active")){
+                    makeActive(0);
+                } else if (mutation.target.ariaLabel == "Go to slide 2" && mutation.target.classList.contains("swiper-pagination-bullet-active")){
+                        makeActive(1);
+                } else if (mutation.target.ariaLabel == "Go to slide 3" && mutation.target.classList.contains("swiper-pagination-bullet-active")){
+                        makeActive(2);       
+                } else if (mutation.target.ariaLabel == "Go to slide 4" && mutation.target.classList.contains("swiper-pagination-bullet-active")){
+                        makeActive(3);
+                } else if (mutation.target.ariaLabel == "Go to slide 5" && mutation.target.classList.contains("swiper-pagination-bullet-active")){
+                        makeActive(4);
+                } 
+            }
+        });
+    });
+    swiperPaginationBullets.forEach(element => {
+        observer.observe(element, {
+            attributes: true,
+        })
+    });
 });
 
 
 /* To the top */
 $(window).scroll(function() {
     var height = $(window).scrollTop();
-    if (height > 100 && height < 5800) {
+    if (height > 100) {
         $('#back2Top').fadeIn();
     } else {
         $('#back2Top').fadeOut();
