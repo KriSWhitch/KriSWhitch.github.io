@@ -86,16 +86,21 @@ $(document).ready(function () {
         mutations.forEach(function (mutation) {
             var newVal = $(mutation.target).prop(mutation.attributeName);
             if (mutation.attributeName === "class") {
+
                 if (mutation.target.ariaLabel == "Go to slide 1" && mutation.target.classList.contains("swiper-pagination-bullet-active")){
                     makeActive(0);
                 } else if (mutation.target.ariaLabel == "Go to slide 2" && mutation.target.classList.contains("swiper-pagination-bullet-active")){
                         makeActive(1);
+                        swiperPaginationBullets[0].classList.add('change');
                 } else if (mutation.target.ariaLabel == "Go to slide 3" && mutation.target.classList.contains("swiper-pagination-bullet-active")){
                         makeActive(2);       
+                        swiperPaginationBullets[0].classList.add('change');
                 } else if (mutation.target.ariaLabel == "Go to slide 4" && mutation.target.classList.contains("swiper-pagination-bullet-active")){
                         makeActive(3);
+                        swiperPaginationBullets[0].classList.add('change');
                 } else if (mutation.target.ariaLabel == "Go to slide 5" && mutation.target.classList.contains("swiper-pagination-bullet-active")){
                         makeActive(4);
+                        swiperPaginationBullets[0].classList.add('change');
                 } 
             }
         });
@@ -105,6 +110,7 @@ $(document).ready(function () {
             attributes: true,
         })
     });
+    
 });
 
 

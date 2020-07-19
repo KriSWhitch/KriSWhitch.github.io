@@ -456,10 +456,16 @@ body {
     content: none;
 }
 
-.swiper-pagination-bullet:first-child:before{
-    border-color: #3aac5d;
+.change::before {
     background: #3aac5d;
-    color: white
+    border-color: #3aac5d;
+    color: white;
+}
+
+.swiper-pagination-bullet-active::before {
+    background: #3aac5d;
+    border-color: #3aac5d;
+    color: white;
  }
 
 .active {
