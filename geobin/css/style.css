@@ -441,6 +441,16 @@ body {
     font-weight: bold;
     transition: ease-in 0.5s;
   }
+  .swiper-pagination-bullet:nth-child(1):hover::before,
+  .swiper-pagination-bullet:nth-child(2):hover::before,
+  .swiper-pagination-bullet:nth-child(3):hover::before,
+  .swiper-pagination-bullet:nth-child(4):hover::before,
+  .swiper-pagination-bullet:nth-child(5):hover::before {
+      background-color: #757575;
+      border-color: #757575;
+      color: #fff;
+      transition: ease-in 0.1s;
+  }
 
 .swiper-pagination-bullet:after{
     content: '';
