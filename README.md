@@ -1,6 +1,6 @@
 # kriswhitch.github.io
 ## This repository is used for the purpose of trial viewing websites.
-- odigo: https://kriswhitch.github.io/odigo-landing/
+- odigo: https://kriswhitch.github.io/odigo-cp/
 - geobin: https://kriswhitch.github.io/Geobin/
 - ghostbusters: https://kriswhitch.github.io/Promo-Site-for-the-film-Ghostbusters/
 - witcher: https://kriswhitch.github.io/witcher-promo/
